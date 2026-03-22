@@ -1,0 +1,10 @@
+{
+  "/page": "app/page.js",
+  "/board/page": "app/board/page.js",
+  "/routines/page": "app/routines/page.js",
+  "/caregiver/page": "app/caregiver/page.js",
+  "/docs/page": "app/docs/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/reports/page": "app/reports/page.js",
+  "/profiles/page": "app/profiles/page.js"
+}

@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(191, 219, 254, 0.45), transparent 32%),
+    radial-gradient(circle at right, rgba(253, 230, 138, 0.28), transparent 28%),
+    linear-gradient(to bottom, #f8fbff, #eef6ff);
+  color: #0f172a;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.container-shell {
+  @apply mx-auto max-w-7xl px-4 md:px-6;
+}
+
+.card {
+  @apply rounded-[28px] border border-white/70 bg-white/90 shadow-[0_16px_40px_rgba(15,23,42,0.08)] backdrop-blur;
+}
+
+.section-title {
+  @apply text-2xl font-bold tracking-tight text-slate-900;
+}
+
+.tile {
+  @apply rounded-[28px] border border-white/80 bg-gradient-to-br from-white to-sky-50/70 p-4 shadow-[0_12px_30px_rgba(15,23,42,0.08)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_18px_34px_rgba(59,130,246,0.16)];
+}
+
+.pill-nav {
+  @apply rounded-full border border-white/70 bg-white/80 px-4 py-2 text-slate-700 shadow-sm transition hover:bg-white hover:shadow;
+}
+
+.pill-nav-primary {
+  @apply font-medium;
+}
+
+.pill-nav-secondary {
+  @apply text-slate-600;
+}
+
+.soft-panel {
+  @apply rounded-[24px] bg-gradient-to-br from-white to-sky-50 p-4 shadow-inner;
+}
+
+.metric-card-sky {
+  @apply rounded-[24px] bg-gradient-to-br from-sky-50 to-blue-100 p-5;
+}
+
+.metric-card-emerald {
+  @apply rounded-[24px] bg-gradient-to-br from-emerald-50 to-teal-100 p-5;
+}
+
+.metric-card-amber {
+  @apply rounded-[24px] bg-gradient-to-br from-amber-50 to-orange-100 p-5;
+}
+
+.metric-card-violet {
+  @apply rounded-[24px] bg-gradient-to-br from-violet-50 to-fuchsia-100 p-5;
+}
